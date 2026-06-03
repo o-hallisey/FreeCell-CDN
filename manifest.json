@@ -1,33 +1,4 @@
 {
-  "version": 2,
-  "packs": [
-    {
-      "id": "flower_pack",
-      "display_name": "Flower Pack",
-      "description": "Three floral card faces and four matching card backs.",
-      "hero_item_id": "flower_15_face",
-      "version": 1,
-      "size_bytes": 2107028,
-      "sha256": "",
-      "preview_url": "previews/flower_pack_thumb.png",
-      "items": [
-        { "id": "flower_08_face",        "category": "CardFace", "display_name": "Flower 08",     "tier": "Premium" },
-        { "id": "flower_15_face",        "category": "CardFace", "display_name": "Flower 15",     "tier": "Premium" },
-        { "id": "flower_16_face",        "category": "CardFace", "display_name": "Flower 16",     "tier": "Premium" },
-        { "id": "flower_bloom_back",     "category": "CardBack", "display_name": "Bloom",         "tier": "Premium" },
-        { "id": "flower_dark_bloom_back","category": "CardBack", "display_name": "Dark Bloom",    "tier": "Premium" },
-        { "id": "flower_corners_back",   "category": "CardBack", "display_name": "Corner Flowers","tier": "Premium" },
-        { "id": "flower_halfcut_back",   "category": "CardBack", "display_name": "Half Cut",      "tier": "Premium" }
-      ],
-      "files": [
-        "Backs/flower_bloom_back.png",
-        "Backs/flower_dark_bloom_back.png",
-        "Backs/flower_corners_back.png",
-        "Backs/flower_halfcut_back.png",
-        "Faces/flower_08_face.png",
-        "Faces/flower_15_face.png",
-        "Faces/flower_16_face.png"
-      ]
-    }
-  ]
+  "version": 3,
+  "packs": []
 }
