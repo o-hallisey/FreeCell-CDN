@@ -1,0 +1,22 @@
+{
+  "version": 3,
+  "packs": [
+    {
+      "id": "themed_pack_1",
+      "display_name": "Botanical",
+      "version": 2,
+      "items": [
+        {"id": "botanical_back_01", "category": "CardBack", "display_name": "Fern", "tier": "Premium"},
+        {"id": "botanical_back_02", "category": "CardBack", "display_name": "Moss", "tier": "Premium"}
+      ]
+    },
+    {
+      "id": "rogue_pack_xyz",
+      "display_name": "Rogue",
+      "version": 1,
+      "items": [
+        {"id": "rogue_back", "category": "CardBack", "display_name": "Rogue", "tier": "Premium"}
+      ]
+    }
+  ]
+}

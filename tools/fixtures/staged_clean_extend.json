@@ -1,0 +1,27 @@
+{
+  "version": 3,
+  "retired_items": [],
+  "sku_pool": ["themed_pack_2"],
+  "packs": [
+    {
+      "id": "themed_pack_1",
+      "display_name": "Botanical",
+      "description": "Hand-drawn botanical card backs.",
+      "version": 2,
+      "swatch_color": "#3D7250",
+      "items": [
+        {"id": "botanical_back_01", "category": "CardBack", "display_name": "Fern", "tier": "Premium"},
+        {"id": "botanical_back_02", "category": "CardBack", "display_name": "Moss", "tier": "Premium"},
+        {"id": "botanical_back_03", "category": "CardBack", "display_name": "Ivy", "tier": "Premium"}
+      ]
+    },
+    {
+      "id": "themed_pack_2",
+      "display_name": "Astronomy",
+      "available": false,
+      "items": [
+        {"id": "astro_back_01", "category": "CardBack", "display_name": "Nebula", "tier": "Premium"}
+      ]
+    }
+  ]
+}

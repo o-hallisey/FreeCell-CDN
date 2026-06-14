@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "packs": [
+    {
+      "id": "themed_pack_1",
+      "display_name": "Botanical",
+      "version": 1,
+      "available_from":  "2026-11-01T00:00:00Z",
+      "available_until": "2026-10-01T00:00:00Z",
+      "items": [
+        {"id": "botanical_back_01", "category": "CardBack", "display_name": "Fern", "tier": "Premium"},
+        {"id": "botanical_back_02", "category": "CardBack", "display_name": "Moss", "tier": "Premium"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 3,
+  "packs": [
+    {
+      "id": "themed_pack_1",
+      "display_name": "Botanical",
+      "version": 2,
+      "items": [
+        {"id": "botanical_back_01", "category": "CardBack", "display_name": "Fern", "tier": "Premium"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "version": 3,
+  "retired_items": ["botanical_back_02"],
+  "packs": [
+    {
+      "id": "themed_pack_1",
+      "display_name": "Botanical",
+      "description": "Hand-drawn botanical card backs.",
+      "version": 3,
+      "swatch_color": "#3D7250",
+      "items": [
+        {"id": "botanical_back_01", "category": "CardBack", "display_name": "Fern", "tier": "Premium"}
+      ]
+    }
+  ]
+}

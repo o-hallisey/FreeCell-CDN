@@ -1,0 +1,51 @@
+name: Validate manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'manifest.json'
+      - 'tools/**'
+      - '.github/workflows/validate-manifest.yml'
+  pull_request:
+    paths:
+      - 'manifest.json'
+      - 'tools/**'
+      - '.github/workflows/validate-manifest.yml'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          # Need history for the diff check against the merge base.
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run validator self-tests (fixtures)
+        run: python tools/run-validator-tests.py
+
+      - name: Determine base ref for diff check
+        id: base
+        shell: bash
+        run: |
+          # On PRs, diff against the PR base; on pushes to main, diff against
+          # the prior commit (HEAD~1). Either resolves to a real git ref that
+          # `git show <ref>:manifest.json` can read.
+          if [[ "${{ github.event_name }}" == "pull_request" ]]; then
+            echo "ref=origin/${{ github.base_ref }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "ref=HEAD~1" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Validate manifest.json
+        run: |
+          python tools/validate-manifest.py \
+            --head-ref "${{ steps.base.outputs.ref }}" \
+            --staged-manifest manifest.json
